@@ -139,6 +139,7 @@ p {
 .adress {
   /* для флекс auto работает для горизонтали, для обычных блоков по вертикали */
   margin-left: auto;
+  font-style: normal;
 }
 
 .adress-nav {
@@ -380,12 +381,14 @@ p {
 .footer-adress .link:focus {
   color: var(--accent-color);
 }
+.footer-adress {
+  font-style: normal;
+}
 
 .footer .logo {
   display: block;
   margin-bottom: 20px;
 }
-/* portfolio */
 
 .footer-header {
   font-weight: 700;
@@ -397,6 +400,8 @@ p {
 .footer .logo-studio {
   color: var(--primary-white-color);
 }
+
+/* portfolio */
 .filter {
   margin-top: 84px;
   margin-bottom: 34px;
