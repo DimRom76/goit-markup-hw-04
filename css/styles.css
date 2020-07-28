@@ -251,6 +251,7 @@ p {
 .feature-list .text {
   line-height: 1.71;
 }
+
 .feature-icon {
   display: block;
   margin-bottom: 55px;
@@ -307,6 +308,8 @@ p {
 .social-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 24px;
+  margin-top: 16px;
 }
 
 .social-list .item + .item {
@@ -315,6 +318,13 @@ p {
 
 .team-list .img {
   margin-bottom: 30px;
+}
+
+.team-list > .item {
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .title {
@@ -327,11 +337,19 @@ p {
 }
 
 .team-list .text {
-  margin-bottom: 16px;
   display: inline-block;
 
   font-size: 16px;
   line-height: 1.19px;
+}
+
+.img-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
 }
 
 /* client-list */
@@ -343,9 +361,37 @@ p {
 .team-list .img-social:hover,
 .team-list .img-social:focus,
 .footer-list .img-social:hover,
-.footer-list .img-social:focus,
-.client-list .img-client:hover {
+.footer-list .img-social:focus {
   background-color: var(--accent-color);
+  --color1: var(--primary-white-color);
+}
+
+.client-list .item + .item {
+  margin-right: 30px;
+}
+
+.client-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  color: #afb1b8;
+}
+
+.client-list .item:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.img-client {
+  --color1: currentColor;
 }
 
 /* footer */
@@ -375,6 +421,7 @@ p {
 .footer-adress .link {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71x;
+  text-decoration: none;
 }
 
 .footer-adress .link:hover,
@@ -399,6 +446,11 @@ p {
 
 .footer .logo-studio {
   color: var(--primary-white-color);
+}
+
+.img-footer {
+  background: rgba(255, 255, 255, 0.1);
+  --color1: var(--primary-white-color);
 }
 
 /* portfolio */
@@ -440,6 +492,9 @@ p {
 }
 
 .work-list .element {
+  background: var(--primary-white-color);
+  border: 1px solid #eeeeee;
+
   /* вариант 1 дать маржины половинчатые везде и у контейнера их сминусовать */
   /* работает если нет фона */
   width: 370px;
@@ -476,7 +531,8 @@ p {
 }
 
 .work-list .element:hover {
-  background-color: var(--accent-color);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .work-list .item {
